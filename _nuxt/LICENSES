@@ -10,6 +10,21 @@
   * @license MIT
   */
 
+/*!
+ * cookie
+ * Copyright(c) 2012-2014 Roman Shtylman
+ * Copyright(c) 2015 Douglas Christopher Wilson
+ * MIT Licensed
+ */
+
+/*!
+ * JavaScript Cookie v2.2.0
+ * https://github.com/js-cookie/js-cookie
+ *
+ * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
+ * Released under the MIT license
+ */
+
 /**
  * vue-meta v1.5.5
  * (c) 2018 Declan de Wet & Sébastien Chopin (@Atinux)
@@ -3416,3 +3431,9 @@ object-assign
   \******************************************************************************/
 
 /*! no static exports found */
+
+/*!
+ * vue-i18n v8.7.0 
+ * (c) 2019 kazuya kawaguchi
+ * Released under the MIT License.
+ */
