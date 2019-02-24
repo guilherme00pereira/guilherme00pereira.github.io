@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{119:function(o,e,t){"use strict";t.r(e),e.default={home:"Home",projects:"Projects",contact:"Contact",about_me:"About Me",education:"Education",categories:"Categories",no_projects_text:"<p>Wait, there is no projects publisheds yet! </p>\n                        <p>They will comming soon!</p>",skills:"Skills"}}}]);
