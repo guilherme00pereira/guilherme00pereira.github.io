@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "previous_page": null,
+    "next_page": null,
+    "count": 1
+  },
+  "data": [
+    {
+      "url": "https://guilherme00pereira.github.io/blog/creating-a-custom-endpoint-for-woocommerce-rest-api",
+      "created": "2018-11-26T15:30:55.728208Z",
+      "published": "2018-11-26T14:59:00Z",
+      "author": {
+        "first_name": "Guilherme",
+        "last_name": "Pereira",
+        "email": "guilherme00pereira@gmail.com",
+        "slug": "guilherme-pereira",
+        "bio": "",
+        "title": "",
+        "linkedin_url": "",
+        "facebook_url": "",
+        "instagram_url": "",
+        "pinterest_url": "",
+        "twitter_handle": "",
+        "profile_image": "https://lh6.googleusercontent.com/-lNyXlZWiejI/AAAAAAAAAAI/AAAAAAAAABw/5BC-KVL4buk/photo.jpg"
+      },
+      "categories": [
+        {
+          "name": "WooCommerce",
+          "slug": "woocommerce"
+        }
+      ],
+      "tags": [],
+      "featured_image": "https://cdn.buttercms.com/gut4TFWSxOJ9iPlrHjiN",
+      "slug": "creating-a-custom-endpoint-for-woocommerce-rest-api",
+      "title": "Creating a Custom Endpoint for WooCommerce REST API",
+      "body": "<p>WooCommerce has an REST API that is fully integrated with the WordPress API,&nbsp;which allows us to make requests in the JSON format to create, read, modify and erase data from our store.<br />However, sometimes we need to extend this API, creating custom endpoints to return certain types of data.</p>\r\n<p>In this tutorial, i will show you step by step how to create a simple custom endpoint, and hope this can be helpful as a start point to do something more complex.</p>\r\n<h2>Creating de Plugin</h2>\r\n<div>First of all, we need to create our plugin.&nbsp;<a href=\"https://codex.wordpress.org/Writing_a_Plugin\" target=\"_blank\" rel=\"noopener\" title=\"WordPress Docs creating a plugin\">WordPress Docs</a>&nbsp;give us a full explanation, but basically what we have to do is to create a folder inside \"wp-content/plugins\", and name it like:</div>\r\n<pre class=\"language-undefined\"><code>mkdir woocommerce-custom-api-endpoint &amp;&amp; cd woocommerce-custom-api-endpoint</code></pre>\r\n<p>&nbsp;Now, inside that folder, we will create a file with the same name:</p>\r\n<pre class=\"language-undefined\"><code>touch woocommerce-custom-api-endpoint.php</code></pre>\r\n<p>In this file, we'll write some basic code to avoid this to be accessed directly and check if WooCommerce is active:</p>\r\n<pre class=\"language-php\"><code>&lt;?php\r\n\r\nif ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly\r\n\r\n//Check if WooCommerce is active\r\nif ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {\r\n\r\n\r\n}\r\n\r\n?&gt;</code></pre>\r\n<p></p>\r\n<h2>Adding the Code for the endpoints</h2>\r\n<p>So, we have the basic structure of our plugin. Now we'll create another file to host a class that will contain the methods to proccess our request and return data. According to the&nbsp;<a href=\"https://developer.wordpress.org/plugins/the-basics/best-practices/#folder-structure\" target=\"_blank\" rel=\"noopener\" title=\"WordPress Best Pratices for Plugin Development\">wordpress best practices about folder structure for plugin development</a>, we will put this new file inside a subdirectory, that will be called \"includes\". The new file will be named \"class-wc-custom-api-endpoint.php\", and will have a class thath extends from WC_API_Resource:</p>\r\n<p></p>\r\n<p></p>",
+      "summary": "This tutorial cover how to create a custom endpoint for WooCommerce REST API.",
+      "seo_title": "Creating a Custom Endpoint for WooCommerce REST API",
+      "meta_description": "This tutorial cover how to create a custom endpoint for WooCommerce REST API.",
+      "status": "published"
+    }
+  ]
+}
