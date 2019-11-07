@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>&lt;/G28&gt;</title>
+    <link>https://guilherme00pereira.github.io/</link>
+    <description>Recent content on &lt;/G28&gt;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate>
+    
+	<atom:link href="https://guilherme00pereira.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Me</title>
+      <link>https://guilherme00pereira.github.io/about/</link>
+      <pubDate>Tue, 29 Oct 2019 13:49:23 +0600</pubDate>
+      
+      <guid>https://guilherme00pereira.github.io/about/</guid>
+      <description>Hello, I am an analyst and systems developer with more than 10 years of experience, working on different types of projects, from the development of websites and e-commerce systems to APIs and back-end systems.</description>
+    </item>
+    
+    <item>
+      <title>Get In Touch</title>
+      <link>https://guilherme00pereira.github.io/contact/</link>
+      <pubDate>Tue, 29 Oct 2019 13:49:23 +0600</pubDate>
+      
+      <guid>https://guilherme00pereira.github.io/contact/</guid>
+      <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Custom Endpoint for WordPress / WooCommerce REST API</title>
+      <link>https://guilherme00pereira.github.io/blog/creating-a-custom-endpoint-for-wordpress-woocommerce-rest-api/</link>
+      <pubDate>Tue, 09 Apr 2019 10:58:08 -0400</pubDate>
+      
+      <guid>https://guilherme00pereira.github.io/blog/creating-a-custom-endpoint-for-wordpress-woocommerce-rest-api/</guid>
+      <description>WooCommerce has a REST API fully integrated with the WordPress API, which allows us to make requests in JSON format to create, read, modify and erase data from our store.</description>
+    </item>
+    
+  </channel>
+</rss>
