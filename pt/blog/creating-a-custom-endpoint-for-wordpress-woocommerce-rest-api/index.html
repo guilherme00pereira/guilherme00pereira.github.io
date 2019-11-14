@@ -123,7 +123,7 @@
 
 <p>Neste tutorial, mostrarei passo a passo como criar um endpoint personalizado simples e espero que isso seja útil como ponto de partida para que se possa desenvolver chamadas mais complexas.</p>
 
-<h2 id="criando-o-plugin">Criando o plugin</h2>
+<h3 id="criando-o-plugin">Criando o plugin</h3>
 
 <p>Primeiramente, precisamos criar nosso plugin. A <a href="https://codex.wordpress.org/Writing_a_Plugin" target="_blank">documentação do WordPress</a> nos dá uma explicação completa sobre como criar um plugin próprio, mas basicamente o que temos que fazer é criar uma pasta dentro do diretório <strong>wp-content/plugins</strong> e dar um nome, como a seguir:</p>
 
@@ -133,7 +133,7 @@
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">touch woocommerce-custom-api-endpoint.php</code></pre></div>
 
-<h2 id="definindo-a-estrutura-básica">Definindo a Estrutura Básica</h2>
+<h3 id="definindo-a-estrutura-básica">Definindo a Estrutura Básica</h3>
 
 <p>Agora, no arquivo que criamos vamos escrever o seguinte código, com as seguintes partes (1, 2 e 3) que iremos explicar a seguir:</p>
 
@@ -157,7 +157,7 @@
 
 <p>A primeira parte (1) do código evita o acesso direto ao arquivo. Em seguida (2), definimos uma função que irá fazer a chamada para o método da classe <strong>WC_Custom_Endpoints</strong>  que iremos criar a seguir, onde estarão configuradas as rotas da nossa API.  No passo (3) estaremos registrando nossos endpoints através do hook <a href="https://developer.wordpress.org/reference/hooks/rest_api_init/" target="_blank">rest_api_init</a>, passando como parâmetro a função criada. </p>
 
-<h2 id="a-classe-wc-custom-endpoints">A Classe WC_Custom_Endpoints</h2>
+<h3 id="a-classe-wc-custom-endpoints">A Classe WC_Custom_Endpoints</h3>
 
 <p>Agora vamos criar um novo arquivo que conterá nossa classe <strong>WC_Custom_Endpoints</strong>, onde estarão os métodos que tratarão as chamadas à nossa API. Para exemplarmos uma chamada à nossa API, criaremos um endpoint que retornará a listagem dos itens presentes nos pedidos com status &ldquo;Processando&rdquo;, ou seja, pedidos já pagos e pendentes de serem separados para envio, o que nos dará uma visão da quantidade de cada item a ser separado. Para isso definiremos a nossa classe com os seguintes métodos:</p>
 
@@ -271,9 +271,9 @@
         <a href="https://guilherme00pereira.github.io/"><img src="https://guilherme00pereira.github.io/images/logo.png" alt="&lt;/G28&gt;"></a>
       </div>
       <div class="col-lg-3 col-sm-6 mb-5">
-        <h6 class="mb-4">Contact Me</h6>
+        <h6 class="mb-4">Entre em Contato</h6>
         <ul class="list-unstyled">
-          <li class="mb-3"><a class="text-dark" href="tel:55-31-998220669"><i
+          <li class="mb-3"><a class="text-dark" href="https://wa.me/55-31-998220669/?text=Ol%c3%a1%2c%20estou%20entrando%20em%20contato%20atrav%c3%a9s%20do%20blog." target="_blank"><i
                 class="ti-mobile mr-3 text-primary"></i>55-31-998220669</a></li>
           <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Belo Horizonte, Brazil</li>
           <li class="mb-3"><a class="text-dark" href="mailto:guilherme00pereira@gmail.com"><i
@@ -282,7 +282,7 @@
         </ul>
       </div>
       <div class="col-lg-3 col-sm-6 mb-5">
-        <h6 class="mb-4">Social Contacts</h6>
+        <h6 class="mb-4">Redes Sociais</h6>
         <ul class="list-unstyled">
           
           <li class="mb-3"><a class="text-dark" href="https://twitter.com/guilherme00per1" target="_blank">twitter</a></li>
@@ -296,7 +296,7 @@
         </ul>
       </div>
       <div class="col-lg-3 col-sm-6 mb-5">
-        <h6 class="mb-4">Categories</h6>
+        <h6 class="mb-4">Categorias</h6>
         <ul class="list-unstyled">
           <li class="mb-3"><a class="text-dark"
               href="/pt/categories/wordpress">Wordpress</a>
@@ -304,8 +304,14 @@
         </ul>
       </div>
       <div class="col-lg-3 col-sm-6 mb-5">
-        <h6 class="mb-4">Quick Links</h6>
+        <h6 class="mb-4">Acesso Rápido</h6>
         <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://guilherme00pereira.github.io/blog">Artigos</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://guilherme00pereira.github.io/pt/sobre-mim">Sobre Mim</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://guilherme00pereira.github.io/pt/contato">Contato</a></li>
           
         </ul>
       </div>

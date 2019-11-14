@@ -123,7 +123,7 @@
 
 <p>In this tutorial, I&rsquo;ll show you step-by-step how to create a simple custom endpoint and hopefully this will be useful as a starting point for more complex calls.</p>
 
-<h2 id="creating-the-plugin">Creating the Plugin</h2>
+<h3 id="creating-the-plugin">Creating the Plugin</h3>
 
 <p>First of all, we will create our WordPress plugin. <a href="https://codex.wordpress.org/Writing_a_Plugin" target="_blank">WordPress docs</a> give us a full explanation about how to create your own plugin, but basically what we have to do is to create a folder inside <strong>wp-content/plugins</strong> directory, and give it a name:</p>
 
@@ -133,7 +133,7 @@
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">touch woocommerce-custom-api-endpoint.php</code></pre></div>
 
-<h2 id="the-basic-structure">The Basic Structure</h2>
+<h3 id="the-basic-structure">The Basic Structure</h3>
 
 <p>Now, in the file that we created we will write the following code, with the following parts (1, 2 and 3) that i will explain next:</p>
 
@@ -157,7 +157,7 @@
 
 <p>The first part (1) of the code avoids direct access to the file. Then (2), we define a function that will make the call to the class method <strong>WC_Custom_Endpoints</strong>  that we will create in the next step, where the routes of our API will be configured. In step (3) we will be registering our endpoints through the hook <a href="https://developer.wordpress.org/reference/hooks/rest_api_init/" target="_blank">rest_api_init</a>, passing as parameter the created function.</p>
 
-<h2 id="wc-custom-endpoints-class">WC_Custom_Endpoints Class</h2>
+<h3 id="wc-custom-endpoints-class">WC_Custom_Endpoints Class</h3>
 
 <p>Now let&rsquo;s create a new file that will contain our <strong>WC_Custom_Endpoints</strong> class, which will be the methods that will handle calls to our API. To copy a call to our API, we will create an endpoint that will return the list of the items present in the orders with status &ldquo;Processing&rdquo;, i.e., orders already paid and pending to be separated for sending, which will give us an overview of the quantity of each item to be separated. For this we will define our class with the following methods:</p>
 
@@ -273,7 +273,7 @@
       <div class="col-lg-3 col-sm-6 mb-5">
         <h6 class="mb-4">Contact Me</h6>
         <ul class="list-unstyled">
-          <li class="mb-3"><a class="text-dark" href="tel:55-31-998220669"><i
+          <li class="mb-3"><a class="text-dark" href="https://wa.me/55-31-998220669/?text=Ol%c3%a1%2c%20estou%20entrando%20em%20contato%20atrav%c3%a9s%20do%20blog." target="_blank"><i
                 class="ti-mobile mr-3 text-primary"></i>55-31-998220669</a></li>
           <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Belo Horizonte, Brazil</li>
           <li class="mb-3"><a class="text-dark" href="mailto:guilherme00pereira@gmail.com"><i
@@ -306,6 +306,12 @@
       <div class="col-lg-3 col-sm-6 mb-5">
         <h6 class="mb-4">Quick Links</h6>
         <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://guilherme00pereira.github.io/blog">Articles</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://guilherme00pereira.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://guilherme00pereira.github.io/contact">Contact</a></li>
           
         </ul>
       </div>
