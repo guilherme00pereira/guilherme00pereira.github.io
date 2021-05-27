@@ -3,58 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://wp28.dev/pt/categories/</loc>
+    <loc>https://wp28.dev/pt/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wp28.dev/categories/"
+                href="https://wp28.dev/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://wp28.dev/pt/categories/"
+                href="https://wp28.dev/pt/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://wp28.dev/pt/pague-com-pix/</loc>
+    <loc>https://wp28.dev/pt/pague-com-pix/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wp28.dev/pague-com-pix/"
+                href="https://wp28.dev/pague-com-pix/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://wp28.dev/pt/pague-com-pix/"
+                href="https://wp28.dev/pt/pague-com-pix/"
                 />
   </url>
   
   <url>
-    <loc>http://wp28.dev/pt/tags/</loc>
+    <loc>https://wp28.dev/pt/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wp28.dev/tags/"
+                href="https://wp28.dev/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://wp28.dev/pt/tags/"
+                href="https://wp28.dev/pt/tags/"
                 />
   </url>
   
   <url>
-    <loc>http://wp28.dev/pt/</loc>
+    <loc>https://wp28.dev/pt/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wp28.dev/"
+                href="https://wp28.dev/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://wp28.dev/pt/"
+                href="https://wp28.dev/pt/"
                 />
   </url>
   
